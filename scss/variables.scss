@@ -1,0 +1,16 @@
+@mixin text{
+    line-height: 24px;
+    color: #52503B;
+}
+@mixin header{
+    font-size: 32px;
+    line-height: 36px;
+    color: #52503B;
+}
+@mixin text_alt{
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+$gray-bg:#FAF8F0;
+$green-bg:#52503B;

@@ -8,6 +8,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -215,15 +216,90 @@
 					Don't take our word for it! Have a look at what our previous guests say about their stay at the
 					Guest House.
 				</p>
-				<!-- 
-				<div class="swiper">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">Slide 1</div>
-						<div class="swiper-slide">Slide 2</div>
-						<div class="swiper-slide">Slide 3</div>
+				<div class="swiper responses__swiper">
+					<div class="swiper-wrapper responses__swiper--wrapper">
+						<div class="swiper-slide responses__slide">
+							<div class="responses__slide--starbox">
+								<svg class="responses__slide--svg">
+									<use xlink:href="./images/sprites/sprite.svg#star_icon--filled"></use>
+								</svg>
+								<svg class="responses__slide--svg">
+									<use xlink:href="./images/sprites/sprite.svg#star_icon--filled"></use>
+								</svg>
+								<svg class="responses__slide--svg">
+									<use xlink:href="./images/sprites/sprite.svg#star_icon--filled"></use>
+								</svg>
+								<svg class="responses__slide--svg">
+									<use xlink:href="./images/sprites/sprite.svg#star_icon--filled"></use>
+								</svg>
+								<svg class="responses__slide--svg">
+									<use xlink:href="./images/sprites/sprite.svg#star_icon--filled"></use>
+								</svg>
+							</div>
+							<h4 class="responses__slide--header">We had an amazing stay at the Guest House!</h4>
+							<p class="responses__slide--text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis
+								cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et
+								justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+							</p>
+							<p class="responses__slide--name">Nate Davidsson</p>
+						</div>
+						<div class="swiper-slide responses__slide">
+							<div class="responses__slide--starbox">
+								<svg> class="responses__slide--svg"
+									<use xlink:href="./images/sprites/sprite.svg#star_icon--filled"></use>
+								</svg>
+								<svg class="responses__slide--svg">
+									<use xlink:href="./images/sprites/sprite.svg#star_icon--filled"></use>
+								</svg>
+								<svg class="responses__slide--svg">
+									<use xlink:href="./images/sprites/sprite.svg#star_icon--filled"></use>
+								</svg>
+								<svg class="responses__slide--svg">
+									<use xlink:href="./images/sprites/sprite.svg#star_icon--filled"></use>
+								</svg>
+								<svg class="responses__slide--svg">
+									<use xlink:href="./images/sprites/sprite.svg#star_icon"></use>
+								</svg>
+							</div>
+							<h4 class="responses__slide--header">Beautiful little hideaway.</h4>
+							<p class="responses__slide--text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis
+								cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh
+								et
+								justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+							</p>
+							<p class="responses__slide--name">Laura Paulie</p>
+						</div>
+						<div class="swiper-slide responses__slide">
+							<div class="responses__slide--starbox">
+								<svg class="responses__slide--svg">
+									<use xlink:href="./images/sprites/sprite.svg#star_icon--filled"></use>
+								</svg>
+								<svg class="responses__slide--svg">
+									<use xlink:href="./images/sprites/sprite.svg#star_icon--filled"></use>
+								</svg>
+								<svg class="responses__slide--svg">
+									<use xlink:href="./images/sprites/sprite.svg#star_icon--filled"></use>
+								</svg>
+								<svg class="responses__slide--svg">
+									<use xlink:href="./images/sprites/sprite.svg#star_icon--filled"></use>
+								</svg>
+								<svg class="responses__slide--svg">
+									<use xlink:href="./images/sprites/sprite.svg#star_icon--filled"></use>
+								</svg>
+							</div>
+							<h4 class="responses__slide--header">Best vacation ever!</h4>
+							<p class="responses__slide--text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis
+								cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh
+								et
+								justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+							</p>
+							<p class="responses__slide--name">Greg Todd</p>
+						</div>
 				</div>
 				<div class="swiper-pagination"></div> 
-				-->
 			</section>
 		</section>
 		<section class="bedroom__block">
@@ -234,8 +310,9 @@
 				<div class="together__box--first">
 					<h3 class="together__header">Come together</h3>
 					<p class="together__text">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus.
-					</p>	
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et
+						faucibus.
+					</p>
 				</div>
 				<div class="together__box--second">
 					<ul class="together__ul">
@@ -277,9 +354,11 @@
 		</section>
 		<section class="booking">
 			<section class="content__container">
-				<h2 class="booking__header">We're already booked up for the spring — hurry up & secure your stay for the summer.</h2>
+				<h2 class="booking__header">We're already booked up for the spring — hurry up & secure your stay for the
+					summer.</h2>
 				<p class="booking__text">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et
+					faucibus.
 				</p>
 				<button class="booking__contact">Contact</button>
 				<button class="booking__book">Book now</button>
@@ -322,9 +401,11 @@
 			<div class="footer__content--subcontainer footer__newsletter">
 				<h4 class="footer__content--header ">newsletter</h4>
 				<p class="footer__newsletter--text">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+					tristique.
 				</p>
-				<input class="footer__newsletter--input" type="text"><button class="footer__newsletter--button">submit</button></input>
+				<input class="footer__newsletter--input" type="text"><button
+					class="footer__newsletter--button">submit</button></input>
 			</div>
 		</section>
 		<section class="footer__title">
@@ -339,6 +420,8 @@
 			</p>
 		</section>
 	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 	<script src="js/main.min.js"></script>
 </body>
+
 </html>
