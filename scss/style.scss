@@ -1,2 +1,345 @@
 @import 'reset';
 @import 'variables';
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+button{
+    cursor: pointer;
+}
+.header {
+    background-color: $green-bg;
+    padding: 18px 0;
+    // .header_ul
+    &__svg{
+        width: 128px;
+        height: 45px;
+    }
+    &_ul {
+        display: flex;
+        column-gap: 12px;
+    }
+
+    // .header__container
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // .header__li
+    &__li {
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+    }
+
+    // .header__button
+
+    &__button {
+        border: none;
+        border-radius: 8px;
+        padding: 11px 18px;
+        color: $green-bg;
+    }
+}
+
+.content {
+
+    // .content__container
+
+    &__container {
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+.logo {
+
+    // .logo__svg
+
+    &__svg {}
+
+    // .logo__header
+
+    &__header {}
+
+    // .logo__text
+
+    &__text {}
+}
+
+.text {
+
+    // .text_first
+
+    &_first {}
+
+    // .text__block
+
+    &__block {}
+
+    // .text__first--paragrapth
+
+    &__first--paragrapth {}
+
+    // .text__second
+
+    &__second {}
+
+    // .text__button
+
+    &__button {}
+}
+
+.weekend {
+
+    // .weekend__header
+
+    &__header {}
+}
+
+.kitchen {
+
+    // .kitchen__block
+
+    &__block {}
+}
+
+.amenities {
+
+    // .amenities__header
+
+    &__header {}
+
+    // .amenities__text
+
+    &__text {}
+
+    // .amenities__subcontainer
+
+    &__subcontainer {}
+
+    // .amenities__svg
+
+    &__svg {}
+
+    // .amenities__subheader
+
+    &__subheader {}
+
+    // .amenities__subtext
+
+    &__subtext {}
+}
+
+.escape {
+
+    // .escape__about
+
+    &__about {}
+
+    // .escape__header
+
+    &__header {}
+
+    // .escape__text
+
+    &__text {}
+
+    // .escape__amenities
+
+    &__amenities {}
+
+    // .escape__amenities--box
+
+    &__amenities--box {}
+
+    // .escape__amenities--list
+
+    &__amenities--list {}
+
+    // .escape__amenities--svg
+
+    &__amenities--svg {}
+
+    // .escape__amenities--text
+
+    &__amenities--text {}
+}
+
+.responses {
+
+    // .responses__header
+
+    &__header {}
+
+    // .responses__text
+
+    &__text {}
+
+    // .responses__swiper
+
+    &__swiper {}
+
+    // .responses__swiper--wrapper
+
+    &__swiper--wrapper {}
+
+    // .responses__slide
+
+    &__slide {}
+
+    // .responses__slide--starbox
+
+    &__slide--starbox {}
+
+    // .responses__slide--svg
+
+    &__slide--svg {}
+
+    // .responses__slide--header
+
+    &__slide--header {}
+
+    // .responses__slide--text
+
+    &__slide--text {}
+
+    // .responses__slide--name
+
+    &__slide--name {}
+}
+
+.swiper {}
+
+.swiper-wrapper {}
+
+.swiper-slide {}
+
+.swiper-pagination {}
+
+.bedroom {
+
+    // .bedroom__block
+
+    &__block {}
+}
+
+.together {
+
+    // .together__box--first
+
+    &__box--first {}
+
+    // .together__header
+
+    &__header {}
+
+    // .together__text
+
+    &__text {}
+
+    // .together__box--second
+
+    &__box--second {}
+
+    // .together__ul
+
+    &__ul {}
+
+    // .together__list
+
+    &__list {}
+
+    // .together__svg
+
+    &__svg {}
+
+    // .together__list--svg
+
+    &__list--svg {}
+}
+
+.booking {
+
+    // .booking__header
+
+    &__header {}
+
+    // .booking__text
+
+    &__text {}
+
+    // .booking__contact
+
+    &__contact {}
+
+    // .booking__book
+
+    &__book {}
+}
+
+.footer {
+
+    // .footer__content
+
+    &__content {}
+
+    // .footer__content--subcontainer
+
+    &__content--subcontainer {}
+
+    // .footer__pages
+
+    &__pages {}
+
+    // .footer__content--header
+
+    &__content--header {}
+
+    // .footer__pages--box
+
+    &__pages--box {}
+
+    // .footer__pages--list
+
+    &__pages--list {}
+
+    // .footer__sc
+
+    &__sc {}
+
+    // .footer__sc--ul
+
+    &__sc--ul {}
+
+    // .footer__sc--list
+
+    &__sc--list {}
+
+    // .footer__sc--svg
+
+    &__sc--svg {}
+
+    // .footer__newsletter
+
+    &__newsletter {}
+
+    // .footer__newsletter--text
+
+    &__newsletter--text {}
+
+    // .footer__newsletter--input
+
+    &__newsletter--input {}
+
+    // .footer__newsletter--button
+
+    &__newsletter--button {}
+
+    // .footer__title
+
+    &__title {}
+}
