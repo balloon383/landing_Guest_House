@@ -50,7 +50,7 @@ button{
     // .content__container
 
     &__container {
-        width: 1200px;
+        max-width: 1200px;
         margin: 0 auto;
     }
 }
@@ -106,7 +106,7 @@ button{
         border: 2px solid white;
         border-radius: 30px;
         opacity: .9;
-        margin-bottom: 90px;
+        margin: 90px 0px 90px;
         &:hover::after{
                 transform: translate(15px, 30px);
             }
@@ -130,37 +130,95 @@ button{
 
     // .text_first
 
-    &_first {}
+    &_first {
+        flex: 1 1 50%;
+    }
 
     // .text__block
-
-    &__block {}
+    &__flex{
+        display: flex;
+        justify-content: center;
+        padding: 140px 0px 100px;
+        position: relative;
+        gap: 40px;
+        max-width: 768px;
+        &::after{
+            content: '';
+            width: 42px;
+            height: 0px;
+            border: 8px solid #E08631;
+            position: absolute;
+            top: 0;
+            left: 0%;
+            transform: translate(342px, 70px);
+        }
+    }
+    &__block {
+        background: $gray-bg;
+    }
 
     // .text__first--paragrapth
 
-    &__first--paragrapth {}
+    &__paragrapth {
+        color: $gray-alt;
+        font-size: 13px;
+        line-height: 20px;
+    }
+    &__paragrapth--second{
+        margin-bottom: 40px;
+    }
 
     // .text__second
 
-    &__second {}
+    &__second {
+        flex: 1 1 50%;
+    }
 
     // .text__button
 
-    &__button {}
+    &__button {
+        @include green_button;
+        padding: 11px 18px;
+    }
 }
 
 .weekend {
-
+    padding: 140px 0px;
     // .weekend__header
 
-    &__header {}
+    &__header {
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 96px;
+        text-align: center;
+        color: #52503B;
+        position: relative;
+        &::before{
+            content: '';
+            width: 42px;
+            height: 0px;
+            border: 8px solid #E08631;
+            position: absolute;
+            top: 0;
+            left: 0%;
+            transform: translate(558px, -40px);
+        }
+
+    }
 }
 
 .kitchen {
 
     // .kitchen__block
 
-    &__block {}
+    &__block {
+        max-width: 1920px;
+        margin: 0 auto;
+
+    }
+    &__image{
+        object-fit: cover;
+    }
 }
 
 .amenities {

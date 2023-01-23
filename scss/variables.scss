@@ -12,5 +12,21 @@
     line-height: 20px;
     color: #FFFFFF;
 }
+@mixin green_button{
+    border: none;
+    border-radius: 8px;
+    background-color: $green-bg;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+}
+@mixin transparent_button{
+    border: 2px solid $green-bg;
+    border-radius: 8px;
+    background: none;
+    color: $green-bg;
+    font-family: 'Montserrat', sans-serif;
+}
 $gray-bg:#FAF8F0;
+$gray-alt:#333333;
 $green-bg:#52503B;
+
