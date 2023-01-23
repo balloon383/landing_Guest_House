@@ -212,11 +212,10 @@ button{
     // .kitchen__block
 
     &__block {
-        max-width: 1920px;
-        margin: 0 auto;
 
     }
     &__image{
+        width: 100%;
         object-fit: cover;
     }
 }
