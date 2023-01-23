@@ -56,18 +56,74 @@ button{
 }
 
 .logo {
-
+    background-image: url(../images/bg_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: calc(100vh - 84px);
+    }
     // .logo__svg
 
-    &__svg {}
+    &__svg {
+        width: 256px;
+        height: 90px;
+        margin-bottom: 35px;
+        margin-top: 180px;
+    }
 
     // .logo__header
 
-    &__header {}
+    &__header {
+        @include header;
+        color: #fff;
+        margin-bottom: 33px;
+    }
 
     // .logo__text
 
-    &__text {}
+    &__text {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        opacity: .9;
+    }
+    &__anchor--box{
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: end;
+    }
+    &__anchor{
+        display: block;
+        position: relative;
+        width: 33px;
+        height: 52px;
+        border: 2px solid white;
+        border-radius: 30px;
+        opacity: .9;
+        margin-bottom: 90px;
+        &:hover::after{
+                transform: translate(15px, 30px);
+            }
+        &::after{
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 10px;
+            border-left: 2px solid #fff;
+            left: 0;
+            top: 0;
+            transform: translate(15px, 10px);
+            transition: transform .2s linear;
+            
+        }
+
+    }
 }
 
 .text {
