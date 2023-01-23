@@ -246,10 +246,10 @@ button{
 
     &__text {
         @include text;
-        margin-bottom: 32px;
         max-width: 550px;
         margin: 0 auto;
         text-align: center;
+        margin-bottom: 32px;
     }
 
     // .amenities__subcontainer
@@ -290,6 +290,17 @@ button{
     &__about {
         max-width: 600px;
         margin-bottom: 32px;
+        position: relative;
+        &::before {
+                content: '';
+                width: 42px;
+                height: 0px;
+                border: 8px solid #E08631;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transform: translate(0, -30px);
+            }
     }
 
     // .escape__header
@@ -317,12 +328,16 @@ button{
 
     &__amenities--box {
         margin-bottom: 32px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
     }
 
     // .escape__amenities--list
 
     &__amenities--list {
         position: relative;
+        margin-bottom: 32px;
     }
 
     // .escape__amenities--svg
@@ -331,11 +346,15 @@ button{
         width: 36px;
         height: 36px;
         position: absolute;
+        left: 0;
+        bottom: 0;
     }
 
     // .escape__amenities--text
 
-    &__amenities--text {}
+    &__amenities--text {
+        padding-left: 52px;
+    }
 }
 
 .responses {
