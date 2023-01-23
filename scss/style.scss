@@ -149,8 +149,8 @@ button{
             border: 8px solid #E08631;
             position: absolute;
             top: 0;
-            left: 0%;
-            transform: translate(342px, 70px);
+            left: 50%;
+            transform: translate(-21px, 70px);
         }
     }
     &__block {
@@ -200,8 +200,8 @@ button{
             border: 8px solid #E08631;
             position: absolute;
             top: 0;
-            left: 0%;
-            transform: translate(558px, -40px);
+            left: 50%;
+            transform: translate(-21px, -40px);
         }
 
     }
@@ -221,61 +221,117 @@ button{
 }
 
 .amenities {
-
+    background-color: $gray-bg;
+    padding: 100px 0px;
     // .amenities__header
 
-    &__header {}
+    &__header {
+        @include header;
+        text-align: center;
+        margin-bottom: 14px;
+        position: relative;
+        &::before{
+            content: '';
+            width: 42px;
+            height: 0px;
+            border: 8px solid #E08631;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-21px, -40px);
+        }
+    }
 
     // .amenities__text
 
-    &__text {}
+    &__text {
+        @include text;
+        margin-bottom: 32px;
+        max-width: 550px;
+        margin: 0 auto;
+        text-align: center;
+    }
 
     // .amenities__subcontainer
 
-    &__subcontainer {}
+    &__subcontainer {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 64px;
+    }
 
     // .amenities__svg
-
-    &__svg {}
+    &__card{
+        text-align: center;
+    }
+    &__svg {
+        width: 64px;
+        height: 64px;
+        margin-bottom: 12px;
+    }
 
     // .amenities__subheader
 
-    &__subheader {}
+    &__subheader {
+        @include text;
+    }
 
     // .amenities__subtext
 
-    &__subtext {}
+    &__subtext {
+        @include text;
+    }
 }
 
 .escape {
-
+    padding: 100px 0px;
     // .escape__about
 
-    &__about {}
+    &__about {
+        max-width: 600px;
+        margin-bottom: 32px;
+    }
 
     // .escape__header
 
-    &__header {}
+    &__header {
+        @include header;
+        margin-bottom: 12px;
+    }
 
     // .escape__text
 
-    &__text {}
+    &__text {
+        @include text;
+    }
 
     // .escape__amenities
 
-    &__amenities {}
+    &__amenities {
+        display: flex;
+        justify-content: center;
+        column-gap: 32px;
+    }
 
     // .escape__amenities--box
 
-    &__amenities--box {}
+    &__amenities--box {
+        margin-bottom: 32px;
+    }
 
     // .escape__amenities--list
 
-    &__amenities--list {}
+    &__amenities--list {
+        position: relative;
+    }
 
     // .escape__amenities--svg
 
-    &__amenities--svg {}
+    &__amenities--svg {
+        width: 36px;
+        height: 36px;
+        position: absolute;
+    }
 
     // .escape__amenities--text
 
