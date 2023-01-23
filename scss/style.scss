@@ -358,18 +358,76 @@ button{
 }
 
 .responses {
-
+    padding: 140px 0px 138px;
+    &__container{
+        position: relative;
+        &--prev{
+            top: auto;
+            bottom: -70px;
+            left: auto;
+            right: 100px;
+            color: $green-bg;
+            &:hover::before {
+                    scale: 1.05;
+                }
+            &::before{
+                content: '';
+                width: 60px;
+                height: 60px;
+                border: 2px solid $green-bg;
+                border-radius: 50%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                transform: translate(-15px, -10px);
+                transition: scale .2s linear;
+            }
+        }
+        &--next{
+            top: auto;
+            bottom: -70px;
+            right: 20px;
+            color: $green-bg;
+            &:hover::before{
+                scale: 1.05;
+            }
+            &::before {
+                    content: '';
+                    width: 60px;
+                    height: 60px;
+                    border: 2px solid $green-bg;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    transform: translate(-20px, -10px);
+                    transition: scale .2s linear;
+                }
+        }
+    }
     // .responses__header
-
-    &__header {}
+    background-color: $gray-bg;
+    &__header {
+        text-align: center;
+        @include header;
+        margin-bottom: 12px;
+    }
 
     // .responses__text
 
-    &__text {}
+    &__text {
+        text-align: center;
+        @include text;
+        width: 600px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
 
     // .responses__swiper
 
-    &__swiper {}
+    &__swiper {
+        height: 266px;
+    }
 
     // .responses__swiper--wrapper
 
@@ -377,27 +435,59 @@ button{
 
     // .responses__slide
 
-    &__slide {}
+    &__slide {
+        background-color: #fff;
+        border-radius: 8px;
+        border: 1px solid rgba(82, 80, 59, 0.1);
+    }
 
     // .responses__slide--starbox
 
-    &__slide--starbox {}
+    &__slide--starbox {
+        margin-bottom: 10px;
+    }
+    &__slide--content{
+        padding: 31px;
+    }
 
     // .responses__slide--svg
 
-    &__slide--svg {}
+    &__slide--svg {
+        width: 18px;
+        height: 18px;
+    }
 
     // .responses__slide--header
 
-    &__slide--header {}
+    &__slide--header {
+        font-size: 18px;
+        line-height: 24px;
+        color: #333333;
+        margin-bottom: 10px;
+    }
 
     // .responses__slide--text
 
-    &__slide--text {}
+    &__slide--text {
+        @include text;
+        margin-bottom: 20px;
+    }
 
     // .responses__slide--name
 
-    &__slide--name {}
+    &__slide--name {
+        padding-left: 10px;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 1px;
+            height: 15px;
+            border-left: 2px solid #E08631;
+        }
+    }
 }
 
 .swiper {}
