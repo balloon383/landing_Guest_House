@@ -418,7 +418,7 @@ button{
     &__text {
         text-align: center;
         @include text;
-        width: 600px;
+        max-width: 600px;
         margin: 0 auto;
         margin-bottom: 30px;
     }
@@ -498,38 +498,74 @@ button{
 }
 
 .together {
-
+    padding: 100px 0 130px;
     // .together__box--first
-
-    &__box--first {}
+    &__flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__box--first {
+        flex: 1 1 50%;
+        position: relative;
+        &::before {
+                content: '';
+                    width: 42px;
+                    height: 0px;
+                    border: 8px solid #E08631;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transform: translate(0, -30px);
+            }
+    }
 
     // .together__header
 
-    &__header {}
+    &__header {
+        @include header;
+        margin-bottom: 12px;
+    }
 
     // .together__text
 
-    &__text {}
+    &__text {
+        @include text;
+    }
 
     // .together__box--second
 
-    &__box--second {}
+    &__box--second {
+        flex: 1 1 50%;
+        display: flex;
+    }
 
-    // .together__ul
-
-    &__ul {}
 
     // .together__list
 
-    &__list {}
+    &__list {
+        position: relative;
+        margin-bottom: 64px;
+        column-gap: 32px;
+    }
 
     // .together__svg
 
-    &__svg {}
+    &__svg {
+        width: 36px;
+        height: 36px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform: translate(0, -5px);
+    }
 
     // .together__list--svg
 
-    &__list--svg {}
+    &__list--text {
+        @include text;
+        padding-left: 50px;
+    }
 }
 
 .booking {
