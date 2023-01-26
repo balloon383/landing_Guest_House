@@ -1,4 +1,5 @@
 # landing_Guest_House
-Lecture 1 
-https://t.me/chekalenk0
-Some changes
+This landing was taken from open source
+
+Landing was coded by Chekalenko Anton 
+https://www.linkedin.com/in/anton-chekalenko-717651257/
