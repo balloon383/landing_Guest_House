@@ -609,12 +609,17 @@ button{
 .footer {
 
     // .footer__content
+    background-color: $green-bg;
+    &__container{
+        padding: 100px 0;
+    }
+    &__content {
+        display: flex;
 
-    &__content {}
+    }
 
     // .footer__content--subcontainer
 
-    &__content--subcontainer {}
 
     // .footer__pages
 
@@ -622,49 +627,91 @@ button{
 
     // .footer__content--header
 
-    &__content--header {}
+    &__content--header {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 2px;
+        margin-bottom: 11px;
+        text-transform: uppercase;
+        color: #fff;
+    }
 
     // .footer__pages--box
-
-    &__pages--box {}
+    &__pages{
+        flex: 1 1 25%;
+    }
+    &__pages--box {
+        color: #fff;
+    }
 
     // .footer__pages--list
 
-    &__pages--list {}
-
-    // .footer__sc
-
-    &__sc {}
+    &__pages--list {
+        margin-bottom: 12px;
+    }
 
     // .footer__sc--ul
 
-    &__sc--ul {}
-
-    // .footer__sc--list
-
-    &__sc--list {}
+    &__sc--ul {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+        margin-top: 20px;
+    }
 
     // .footer__sc--svg
+    &__sc{
+        flex: 1 1 25%;
+    }
 
-    &__sc--svg {}
+    &__sc--svg {
+        width: 32px;
+        height: 32px;
+    }
 
     // .footer__newsletter
 
-    &__newsletter {}
+    &__newsletter {
+        flex: 1 1 50%;
+        padding-right: 30px;
+    }
 
     // .footer__newsletter--text
 
-    &__newsletter--text {}
+    &__newsletter--text {
+        @include text;
+        color: #fff;
+        margin-bottom: 10px;
+    }
 
     // .footer__newsletter--input
-
-    &__newsletter--input {}
+    &__form{
+        position: relative;
+    }
+    &__newsletter--input {
+        border-radius: 8px;
+        border: none;
+        padding: 16px 30px;
+        width: calc(100% - 30px);
+    }
 
     // .footer__newsletter--button
 
-    &__newsletter--button {}
+    &__newsletter--button {
+        @include green_button;
+        padding: 5px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translate(20px, 10px);
+    }
 
     // .footer__title
 
-    &__title {}
+    &__title {
+        text-align: center;
+    }
+    &__title--text{
+        color: #fff;
+    }
 }
