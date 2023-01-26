@@ -6,6 +6,10 @@ body{
 button{
     cursor: pointer;
 }
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
 .header {
     background-color: $green-bg;
     padding: 18px 0;
@@ -411,6 +415,16 @@ button{
         text-align: center;
         @include header;
         margin-bottom: 12px;
+        &::before {
+                content: '';
+                width: 42px;
+                height: 0px;
+                border: 8px solid #E08631;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translate(-21px, -40px);
+            }
     }
 
     // .responses__text
@@ -430,8 +444,6 @@ button{
     }
 
     // .responses__swiper--wrapper
-
-    &__swiper--wrapper {}
 
     // .responses__slide
 
@@ -580,7 +592,18 @@ button{
     }
     &__header {
         @include header;
-        margin-bottom: 12px;   
+        margin-bottom: 12px;  
+        position: relative;
+        &::before {
+                content: '';
+                width: 42px;
+                height: 0px;
+                border: 8px solid #E08631;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translate(-21px, -40px);
+            }
     }
 
     // .booking__text
@@ -648,8 +671,11 @@ button{
 
     &__pages--list {
         margin-bottom: 12px;
+        
     }
-
+    &__pages--list a {
+        color: #fff;
+    }
     // .footer__sc--ul
 
     &__sc--ul {
@@ -713,5 +739,6 @@ button{
     }
     &__title--text{
         color: #fff;
+        margin-bottom: 20px;
     }
 }
