@@ -571,20 +571,39 @@ button{
 .booking {
 
     // .booking__header
-
-    &__header {}
+    background-color: $gray-bg;
+    padding: 100px 0;
+    &__container{
+        max-width: 533px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    &__header {
+        @include header;
+        margin-bottom: 12px;   
+    }
 
     // .booking__text
 
-    &__text {}
+    &__text {
+        @include text;
+        margin-bottom: 12px;
+    }
 
     // .booking__contact
 
-    &__contact {}
+    &__contact {
+        @include transparent_button;
+        padding: 16px 26px;
+        margin-right: 20px;
+    }
 
     // .booking__book
 
-    &__book {}
+    &__book {
+        @include green_button;
+        padding: 16px 26px;
+    }
 }
 
 .footer {
