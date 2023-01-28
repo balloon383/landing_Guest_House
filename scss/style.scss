@@ -36,6 +36,11 @@ a{
     a{
         text-decoration: none;
         color: #fff;
+        transition: all .2s linear;
+            &:hover {
+                color: rgb(212, 212, 212);
+                
+            }
     }
     }
 
@@ -46,6 +51,11 @@ a{
         border-radius: 8px;
         padding: 11px 18px;
         color: $green-bg;
+        transition: all .2s linear;
+        &:hover{
+            background-color: rgb(212, 212, 212);
+            scale: 1.1;
+        }
     }
 }
 

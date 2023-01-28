@@ -18,6 +18,11 @@
     background-color: $green-bg;
     color: #FFFFFF;
     font-family: 'Montserrat', sans-serif;
+    transition: all .2s linear;
+    &:hover {
+        background-color: #413f2f;
+        scale: 1.1;
+    }
 }
 @mixin transparent_button{
     border: 2px solid $green-bg;
@@ -25,6 +30,10 @@
     background: none;
     color: $green-bg;
     font-family: 'Montserrat', sans-serif;
+    transition: all .2s linear;
+    &:hover{
+        scale: 1.1;
+    }
 }
 $gray-bg:#FAF8F0;
 $gray-alt:#333333;
