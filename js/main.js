@@ -14,7 +14,8 @@ const yourName = prompt('What is your name?');
 const yourSecondName = prompt('What is your second name?');
 const yourDayOfBirth = +prompt('What is your day of birth');
 const yourMonthOfBirth = +prompt('What is your month of birth');
-const yourYearOfBirth = 2023 - +prompt('What is your year of birth?');
+const yourYearOfBirth = +prompt('What is your year of birth?');
+const yourAge = 2023 - yourYearOfBirth;
 let yourZodiac
 if (yourDayOfBirth > 31 || yourMonthOfBirth > 12) {
   yourZodiac = 'Wrong day or month of birth'
@@ -44,4 +45,9 @@ if (yourDayOfBirth > 31 || yourMonthOfBirth > 12) {
   yourZodiac = 'Capricorn';
 }
 
-console.log(yourName, yourSecondName, yourDayOfBirth, yourMonthOfBirth, yourYearOfBirth, yourZodiac)
+if ((yourYearOfBirth % 400 == 0) || ((yourYearOfBirth % 100) % 4 == 0)) {
+  console.log(`User Bio: ${yourName} ${yourSecondName} ${yourAge} years old (loop year), ${yourZodiac}`)
+} else {
+  console.log(`User Bio: ${yourName} ${yourSecondName} ${yourAge} years old, ${yourZodiac}`)
+}
+
